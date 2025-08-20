@@ -27,8 +27,7 @@ defmodule ExFastah.MixProject do
       {:bypass, "~> 2.1", only: :test},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.4", only: [:dev, :test], runtime: false},
-      {:ex_machina, "~> 2.8", only: :test},
-      {:hammox, "~> 0.7", only: :test}
+      {:ex_machina, "~> 2.8", only: :test}
     ]
   end
 

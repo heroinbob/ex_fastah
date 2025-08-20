@@ -7,6 +7,26 @@ defmodule ExFastah do
   @doc """
   Look up the given IP and return the `Location`.
 
+  ## Configuration
+
+  You'll need to define our Fastah API key for authentication.
+
+  ```elixir
+  config :ex_fastah, :fastah_key, "my-key"
+  ```
+
+  You can optionally define `:additional_options` in the config that will be used
+  for all HTTP requests. This way you can add configuration without needing to
+  provide defaults as options in the codebase. Be aware that when you define
+  additional options in the config - they are overridden by runtime options provided
+  in the codebase.
+
+  See the options section below for supported values.
+
+  ```elixir
+  config :ex_fastah, :additional_options, [retry: :transient]
+  ````
+
   ## Options
 
   Options can be passed in to provide additional control of the requests and responses.

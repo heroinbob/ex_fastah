@@ -29,7 +29,15 @@ def deps do
 end
 ```
 
-## Providing a custom adapter
+## Configuration
+
+Define the Fastah API key in the configuration.
+
+```elixir
+config :fastah_key, "my-key"
+````
+
+### Providing a custom adapter
 
 When you don't want to rely on `ReqAdapter` you can define your own in the application config.
 

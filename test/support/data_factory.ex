@@ -1,4 +1,5 @@
 defmodule ExFastah.Test.DataFactory do
+  @moduledoc false
   use ExMachina
 
   def location_factory do

@@ -1,6 +1,8 @@
 defmodule ExFastah.Test.Fixtures do
+  @moduledoc false
   @access_denied %{
-    "message" => "Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API.",
+    "message" =>
+      "Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API.",
     "statusCode" => 401
   }
 
